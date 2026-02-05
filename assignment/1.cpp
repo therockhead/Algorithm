@@ -39,7 +39,7 @@ int main() {
   }
 
   fstream input2;
-  input2.open("input2", ios::in);
+  input2.open("IO/input2.txt", ios::in);
 
   input2 >> n;
   for (int i = 0; i < n; i++) {
@@ -68,7 +68,6 @@ void merge(int l, int mid, int r) {
     if (a[i] <= a[j]) {
       b[k] = a[i];
       i++;
-      
     }
     else {
       b[k] = a[j];
@@ -76,9 +75,8 @@ void merge(int l, int mid, int r) {
     }
     k++; // b index
   }
-
+  merge_op++;
   if (i > mid) { // rest
-    merge_op++;
     for (int m = j; m <= r; m++) {
       b[k] = a[m];
       k++;
@@ -86,7 +84,7 @@ void merge(int l, int mid, int r) {
     
   }
   else if (j > r) {
-    merge_op++;
+    // merge_op++;
     for (int m = i; m <= mid; m++) {
       b[k] = a[m];
       k++;
