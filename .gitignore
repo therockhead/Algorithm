@@ -1,0 +1,12 @@
+# --- Executables and Binary Files ---
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+
+# --- IDE and Editor Folders ---
+.vscode/
+.idea/
+*.swp
+*.swo
