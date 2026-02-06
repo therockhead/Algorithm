@@ -12,7 +12,6 @@ using ll = long long;
 const int N = 1e5 + 1;
 
 int dis[N];
-// vector<vector<pii>> adj;
 
 void dijkstra(vector<vector<pii>> &adj, int start) {
   int n = adj.size();
