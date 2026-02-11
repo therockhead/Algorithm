@@ -4,6 +4,9 @@
 *.so
 *.dylib
 *.bin
+*.out
+*.app
+
 
 # --- IDE and Editor Folders ---
 .vscode/
